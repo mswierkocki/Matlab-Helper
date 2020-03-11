@@ -1,0 +1,18 @@
+function y=aproksymacja2(a,b)
+x=rand(10);
+y=rand(10);
+y=a*x+b;
+plot(x,y,'*')
+k=0;
+n=length(y);
+for  i=1:n
+    y=sum(c(k)*g(k))*(x(i));
+    plot(y,'+','color','red')
+end
+T0=1;
+T1=x;
+T(k)=2*x*T(k-1)-T(k-2);
+plot(T(k),'*','color','green')
+end
+
+
